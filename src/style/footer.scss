@@ -1,0 +1,30 @@
+#footer {
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  background-color: $background;
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 250px;
+      height: auto;
+      justify-self: center;
+    }
+  }
+  .sv-media-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $lightGray;
+    font-size: 1.5rem;
+    text-align: center;
+    a {
+      color: $lightGray;
+      cursor: pointer;
+    }
+  }
+}

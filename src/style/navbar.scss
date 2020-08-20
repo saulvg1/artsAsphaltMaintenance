@@ -1,21 +1,26 @@
 .navbar-wrapper {
   display: flex;
   position: fixed;
-  height: 10vh;
+  min-height: 10vh;
+  height: auto;
   width: 100%;
   top: 0;
   padding: 2rem;
   background: $background;
+  flex-wrap: wrap;
+
+  z-index: 200;
 
   .navbar-logo {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex: 1 1 30rem;
     overflow: hidden;
-    height: 100%;
-    img {
-      width: auto;
-      height: 90%;
+    height: auto;
+    h1 {
+      color: $lightGray;
+      font-size: $regular;
     }
   }
 
