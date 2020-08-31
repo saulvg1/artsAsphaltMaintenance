@@ -2,46 +2,59 @@
   background-color: $red;
   @include flex(column, center, center);
   padding: 4rem;
+
+  header {
+    font-size: $large;
+    width: 80%;
+    text-align: left;
+    color: $lightGray;
+    border-bottom: 3px solid $lightGray;
+    font-weight: 900;
+  }
   .services-container {
-    @include flex(row, center, center);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 80%;
-  }
-  .services-card {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    background: #fff;
-    margin: 1.5rem;
-    flex: 1 1 35rem;
-    width: 35rem;
-    max-width: 35rem;
-    height: 40rem;
-    .card-top {
-      height: 100%;
-      padding: 2rem;
-      font-size: 2rem;
-      header {
-        font-size: 1.5em;
-        border-bottom: 0.5rem solid $red;
-        height: auto;
-        width: 90%;
-        text-align: left;
+
+    .services-card {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      background: #fff;
+      margin: 1.5rem;
+      flex: 1 1 35rem;
+      width: 35rem;
+      max-width: 35rem;
+      height: 40rem;
+      .card-top {
+        height: 100%;
+        padding: 2rem;
+        font-size: 2rem;
+        header {
+          font-size: 1.5em;
+          border-bottom: 0.5rem solid $red;
+          height: auto;
+          width: 90%;
+          text-align: left;
+          color: $background;
+        }
+        p {
+          font-size: 1em;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
       }
-      p {
-        font-size: 1em;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      }
-    }
-    .card-bottom {
-      position: relative;
-      display: block;
-      img {
-        position: absolute;
-        bottom: -7px;
-        width: 100%;
-        height: auto;
-        object-fit: fill;
+      .card-bottom {
+        position: relative;
+        display: block;
+        img {
+          position: absolute;
+          bottom: 0px;
+          width: 100%;
+          height: auto;
+          object-fit: fill;
+        }
       }
     }
   }

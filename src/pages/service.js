@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 
+import ContactTag from "../components/contactTag.js";
+
 import sealCoating from "../../static/assets/workPhotos/sealCoating.jpg";
+import crackSealing from "../../static/assets/workPhotos/crackSealing.jpg";
+import asphaltPatching from "../../static/assets/workPhotos/asphaltPatching.jpg";
+import asphaltPaving from "../../static/assets/workPhotos/asphaltPaving.jpg";
+import asphaltStriping from "../../static/assets/workPhotos/asphaltStriping.jpg";
 export default class Service extends Component {
   constructor(props) {
     super(props);
@@ -8,6 +14,7 @@ export default class Service extends Component {
   render() {
     return (
       <div id="services">
+        <header>Services</header>
         <div className="services-container">
           <div className="services-card">
             <div className="card-top">
@@ -24,7 +31,6 @@ export default class Service extends Component {
               <img src={sealCoating} alt="service-image" />
             </div>
           </div>
-
           <div className="services-card">
             <div className="card-top">
               <div className="card-header">
@@ -39,10 +45,9 @@ export default class Service extends Component {
               </p>
             </div>
             <div className="card-bottom">
-              <img src={sealCoating} alt="service-image" />
+              <img src={crackSealing} alt="service-image" />
             </div>
           </div>
-
           <div className="services-card">
             <div className="card-top">
               <div className="card-header">
@@ -57,10 +62,9 @@ export default class Service extends Component {
               </p>
             </div>
             <div className="card-bottom">
-              <img src={sealCoating} alt="service-image" />
+              <img src={asphaltPatching} alt="service-image" />
             </div>
           </div>
-
           <div className="services-card">
             <div className="card-top">
               <div className="card-header">
@@ -75,10 +79,9 @@ export default class Service extends Component {
               </p>
             </div>
             <div className="card-bottom">
-              <img src={sealCoating} alt="service-image" />
+              <img src={asphaltPaving} alt="service-image" />
             </div>
           </div>
-
           <div className="services-card">
             <div className="card-top">
               <div className="card-header">
@@ -93,10 +96,11 @@ export default class Service extends Component {
               </p>
             </div>
             <div className="card-bottom">
-              <img src={sealCoating} alt="service-image" />
+              <img src={asphaltStriping} alt="service-image" />
             </div>
           </div>
         </div>
+        <ContactTag />
       </div>
     );
   }
